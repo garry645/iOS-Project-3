@@ -16,5 +16,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func slider(_ sender: UISlider) {
+        bamaIV.alpha = CGFloat(sender.value)
+        auburnIV.alpha = CGFloat(1 - sender.value)
+        
+    }
+    
+    @IBOutlet weak var bamaIV: UIImageView!
+    @IBOutlet weak var auburnIV: UIImageView!
 }
 
